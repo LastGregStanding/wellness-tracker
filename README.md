@@ -1,1 +1,1 @@
-# wellness-tracker
+# Wellness Tracker for CS361
