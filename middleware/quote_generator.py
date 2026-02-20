@@ -1,23 +1,14 @@
 import requests
 
 def get_quote(category='motivational'):
-    """
-    Calls the quote generator microservice to get a random quote.
-    
-    Args:
-        category: Type of quote - 'motivational', 'health', or 'video_game'
-    
-    Returns:
-        dict: Response from the microservice with 'quote' and 'source' keys
-    """
     url = "http://localhost:5004/quote"
     
-    payload = {
+    quote_data = {
         'category': category
     }
     
     try:
-        response = requests.post(url, json=payload)
+        response = requests.post(url, json=quote_data)
         
         if response.status_code == 200:
             return response.json()
