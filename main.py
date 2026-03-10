@@ -1,5 +1,4 @@
-from tracker_actions import print_quote
-from tracker_actions import log_water, log_meditation, view_stats
+from tracker_actions import log_water, log_meditation, view_stats, print_quote
 from prompts import main_menu_prompt, welcome_prompt
 
 # Welcome Screen
