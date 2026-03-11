@@ -56,7 +56,7 @@ def get_cuisine_preference():
         if choice.isdigit():
             choice_digit = int(choice)
             if 1 <= choice_digit <= len(CUISINES):
-                return CUISINES[idx - 1]
+                return CUISINES[choice_digit - 1]
         elif choice in [cuisine.lower() for cuisine in CUISINES]:
             return choice.capitalize()
         
