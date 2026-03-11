@@ -1,4 +1,4 @@
-from tracker_actions import log_water, log_meditation, view_stats, print_quote
+from tracker_actions import log_water, log_meditation, view_stats, print_quote, meal_suggest
 from prompts import main_menu_prompt, welcome_prompt
 
 # Welcome Screen
@@ -16,11 +16,13 @@ def show_main_menu(name):
             log_water()
         elif choice in ['2', 'meditation']:
             log_meditation(name)
-        elif choice in ['3', 'stats']:
+        elif choice in ['3', 'meal']:
+            meal_suggest()
+        elif choice in ['4', 'stats']:
             view_stats()
-        elif choice in ['4', 'quote']:  
+        elif choice in ['5', 'quote']:  
             print_quote()
-        elif choice in ['5', 'exit']:  
+        elif choice in ['6', 'exit']:  
             print("Closing tracker. Stay healthy!")
             break
 
