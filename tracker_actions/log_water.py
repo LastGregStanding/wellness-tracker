@@ -1,4 +1,4 @@
-from prompts import post_action_prompt
+from .prompts import post_action_prompt
 import state
 
 # Track your water

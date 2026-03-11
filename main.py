@@ -1,5 +1,12 @@
-from tracker_actions import log_water, log_meditation, view_stats, print_quote, meal_suggest
-from prompts import main_menu_prompt, welcome_prompt
+from tracker_actions import (
+    log_water, 
+    log_meditation, 
+    view_stats, 
+    print_quote, 
+    meal_suggest, 
+    main_menu_prompt, 
+    welcome_prompt
+ )
 
 # Welcome Screen
 def main():

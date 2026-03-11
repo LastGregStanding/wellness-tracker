@@ -1,18 +1,18 @@
+import state
+
 # Confirm whether you want to undo the previous action
 def confirm_undo():
-    global daily_water, daily_meditation, last_action
-    
     confirm = input("\nAre you sure you want to undo the previous entry? This cannot be reversed (yes/no): ").strip().lower()
     
     if confirm == 'yes':
-        if last_action["type"] == "water":
-            daily_water -= last_action["amount"]
+        if state.last_action["type"] == "water":
+            state.daily_water -= state.last_action["amount"]
             print("\nWater entry undone.")
-        elif last_action["type"] == "meditation":
-            daily_meditation -= last_action["amount"]
+        elif state.last_action["type"] == "meditation":
+            state.daily_meditation -= state.last_action["amount"]
             print("\nMeditation entry undone.")
         
-        last_action = {"type": None, "amount": 0} 
+        state.last_action = {"type": None, "amount": 0} 
         input("Press ENTER to continue...")
 
 # Main Menu

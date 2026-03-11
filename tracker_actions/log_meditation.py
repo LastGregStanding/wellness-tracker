@@ -1,5 +1,5 @@
 from middleware.unit_converter import convert_units
-from prompts import post_action_prompt
+from .prompts import post_action_prompt
 import state
 
 # Log your meditation
