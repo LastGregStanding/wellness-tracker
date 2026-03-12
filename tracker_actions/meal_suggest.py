@@ -82,6 +82,8 @@ def meal_suggest():
     }
 
     for _ in range(3):
+        
+        # Call meal microservice
         meal = request_meal(filters)
         display_meal(meal)
         filters["exclude"].append(meal["name"])

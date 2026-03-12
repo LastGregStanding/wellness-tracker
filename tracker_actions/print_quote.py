@@ -1,6 +1,7 @@
 from middleware.quote_generator import get_quote
 
 def print_quote():
+    # Call quote microservice
     result = get_quote('motivational')
     
     if result:
