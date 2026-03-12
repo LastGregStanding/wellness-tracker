@@ -72,7 +72,8 @@ def display_recreational(workout):
 def workout_suggest():
     # Get user zip code
     zip_code = get_location()
-    # Get weather data
+
+    # Call weather microservice to retrieve weather data for user zip code
     weather = request_weather(zip_code)
     
     city = weather["location"]
@@ -102,6 +103,7 @@ def workout_suggest():
         elif workout_type == "lifting":
             filters["category"] = category
 
+        # Call workout microservice to get a workout suggestion
         workout = request_workout(filters)
 
         # Ran out of workout options
