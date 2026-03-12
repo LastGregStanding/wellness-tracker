@@ -1,3 +1,4 @@
+import state
 from tracker_actions import (
     log_water, 
     log_meditation, 
@@ -11,13 +12,13 @@ from tracker_actions import (
 
 # Welcome Screen
 def main():
-    name = welcome_prompt()
-    show_main_menu(name)
+    state.name = welcome_prompt()
+    show_main_menu(state.name)
 
 # Main Menu 
 def show_main_menu(name):
     while True:
-        main_menu_prompt(name)
+        main_menu_prompt(state.name)
         choice = input("\nSelection: ").strip().lower()
 
         if choice in ['1', 'water']:
