@@ -5,7 +5,8 @@ from tracker_actions import (
     print_quote, 
     meal_suggest, 
     main_menu_prompt, 
-    welcome_prompt
+    welcome_prompt,
+    workout_suggest
  )
 
 # Welcome Screen
@@ -25,11 +26,13 @@ def show_main_menu(name):
             log_meditation(name)
         elif choice in ['3', 'meal']:
             meal_suggest()
-        elif choice in ['4', 'stats']:
-            view_stats()
+        elif choice in ['4', 'workout']:
+            workout_suggest()
         elif choice in ['5', 'quote']:  
             print_quote()
-        elif choice in ['6', 'exit']:  
+        elif choice in ['6', 'stats']:
+            view_stats()
+        elif choice in ['7', 'exit']:  
             print("Closing tracker. Stay healthy!")
             break
 

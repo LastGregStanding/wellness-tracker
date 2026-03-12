@@ -21,12 +21,13 @@ def main_menu_prompt(name):
         print("Main Menu")
         print("—" * 15)
         print(f"\n{name}, what would you like to do?\n")
-        print("1) Log 8oz water         (type '1' or 'water')")
-        print("2) Log meditation time   (type '2' or 'meditation')")
-        print("3) Get meal suggestion   (type '3' or 'meal')")
-        print("4) View daily stats      (type '4' or 'stats')")
-        print("5) Motivational Quote    (type '5' or 'quote')")
-        print("6) Exit program          (type '6' or 'exit')")
+        print("1) Log 8oz water             (type '1' or 'water')")
+        print("2) Log meditation time       (type '2' or 'meditation')")
+        print("3) Get meal suggestion       (type '3' or 'meal')")
+        print("4) Get workout suggestion.   (type '4' or 'workout')")
+        print("5) Get motivational quote    (type '5' or 'quote')")
+        print("6) View daily stats          (type '6' or 'stats')")
+        print("7) Exit program              (type '7' or 'exit')")
 
 # Prompt after doing an action
 def post_action_prompt():
